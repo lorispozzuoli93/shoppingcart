@@ -1,0 +1,20 @@
+CRUD
+Create
+Read
+Update
+Delete
+
+HTTP Protocol
+Post - Create
+Get - Read
+Put/Patch - Update
+Delete - Delete
+
+{
+    "eft": {
+        id:"eft,
+        price: 70,
+        ...
+    }
+}
+ids: ["eft", "hunt"]
