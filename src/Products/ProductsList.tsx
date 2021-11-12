@@ -2,10 +2,10 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { addToCart } from "../Cart/cart.slice";
 import { useAppDispatch } from "../store.hooks";
-import { getProductsSelector, Product, removeProduct } from "./products.slice";
+import { Product, removeProduct, selectAllProducts } from "./products.slice";
 
 const ProductsList: React.FC = () => {
-  const products = useSelector(getProductsSelector);
+  const products = useSelector(selectAllProducts);
   const dispatch = useAppDispatch();
 
   const removeFromStore = (id: string) => {
